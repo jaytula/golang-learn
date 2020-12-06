@@ -28,3 +28,39 @@
   - `src`
 
 - Each project in `src` folder should emulate your github project path for its path
+
+### Creating first app
+
+At `src/github.com/username/appname/Main.go`
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("Hello world")
+}
+```
+
+To run:
+
+```shell
+go run src/github.com/username/appname/Main.go
+```
+
+to build:
+
+```shell
+go build github.com/username/appname
+```
+
+to install:
+
+```shell
+go install github.com/username/appname
+```
+
+### Package locations
+
+Everything in your `GOPATH` and `/usr/local/go/src`
